@@ -1,0 +1,114 @@
+{
+  "version": "2026-11-26",
+  "method": "editorial weighted scoring, not fitted statistical discriminant analysis",
+  "axes": [
+    {
+      "name": "핵심 질문",
+      "max": 5
+    },
+    {
+      "name": "주요 근거",
+      "max": 3
+    },
+    {
+      "name": "독자 효용",
+      "max": 2
+    }
+  ],
+  "sections": [
+    {
+      "id": "today",
+      "name": "오늘의 혁신",
+      "criteria": "정당의 당일 발표와 현장 의제를 사실·입장·영향으로 나눕니다."
+    },
+    {
+      "id": "policy",
+      "name": "정책을 읽다",
+      "criteria": "정책 대상·재원·집행 가능성과 반론을 검토합니다."
+    },
+    {
+      "id": "assembly",
+      "name": "국회와 제도",
+      "criteria": "의안·회의록·표결과 제도 변화를 확인합니다."
+    },
+    {
+      "id": "verify",
+      "name": "쟁점과 검증",
+      "criteria": "주장과 의혹을 원자료 및 반대 근거에 대조합니다."
+    },
+    {
+      "id": "people",
+      "name": "사람과 기록",
+      "criteria": "인물·책·사상을 공적 기록과 함께 읽습니다."
+    },
+    {
+      "id": "history",
+      "name": "지역과 역사",
+      "criteria": "지역 문제·외교 현안·정치사를 현재와 연결합니다."
+    }
+  ],
+  "tie_break": [
+    "핵심 질문",
+    "주요 근거",
+    "provisional review"
+  ],
+  "publication_rule": "one primary section; related links do not count as new article",
+  "classification_records": [
+    {
+      "article": "innovation-dokdo-20261126.html",
+      "section": "history",
+      "scores": {
+        "today": 7,
+        "policy": 3,
+        "assembly": 2,
+        "verify": 8,
+        "people": 4,
+        "history": 10
+      },
+      "reason": "핵심 질문이 독도 방문·일본 입국 거부와 과거 기록 대조, 지역·외교 맥락이 중심",
+      "state": "existing archive, not new daily article"
+    },
+    {
+      "article": "innovation-history-20261126.html",
+      "section": "history",
+      "scores": {
+        "today": 3,
+        "policy": 3,
+        "assembly": 5,
+        "verify": 5,
+        "people": 5,
+        "history": 10
+      },
+      "reason": "창당 이후 연혁과 지도부·정치사 변화가 핵심",
+      "state": "existing archive, not new daily article"
+    },
+    {
+      "article": "profiles-14",
+      "section": "people",
+      "scores": {
+        "today": 2,
+        "policy": 4,
+        "assembly": 4,
+        "verify": 5,
+        "people": 10,
+        "history": 4
+      },
+      "reason": "각 인물의 경력·저술·행동과 공적 기록 비교가 핵심",
+      "state": "existing archive, not new daily article"
+    },
+    {
+      "article": "cho-series-01",
+      "section": "people",
+      "scores": {
+        "today": 1,
+        "policy": 4,
+        "assembly": 1,
+        "verify": 5,
+        "people": 10,
+        "history": 3
+      },
+      "reason": "두 책의 공부관과 공적 책임 비교가 핵심",
+      "state": "unpublished draft"
+    }
+  ]
+}
