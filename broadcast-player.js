@@ -1,0 +1,11 @@
+(()=>{
+'use strict';
+// Register verified, public Innovation episodes here. Do not add other magazines' broadcasts.
+const episodes=[];
+const box=document.querySelector('#innovation-broadcast');if(!box)return;
+const player=box.querySelector('#innovation-player'),buttons=[...box.querySelectorAll('.iv-controls button')],list=box.querySelector('#innovation-episodes');let selected=0,frame=null,playing=false;
+function command(name){if(frame)frame.contentWindow.postMessage(JSON.stringify({event:'command',func:name,args:[]}), 'https://www.youtube-nocookie.com');}
+function load(index){if(!episodes.length)return;selected=(index+episodes.length)%episodes.length;const e=episodes[selected];playing=false;frame=document.createElement('iframe');frame.title=e.title;frame.src='https://www.youtube-nocookie.com/embed/'+encodeURIComponent(e.videoId)+'?enablejsapi=1&rel=0';frame.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';frame.allowFullscreen=true;frame.style.cssText='width:100%;height:100%;border:0';player.replaceChildren(frame);box.querySelector('h2').textContent=e.title;const desc=box.querySelector(':scope>p');desc.replaceChildren(document.createTextNode(e.published+' · '),Object.assign(document.createElement('a'),{href:'https://www.youtube.com/watch?v='+encodeURIComponent(e.videoId),textContent:'YouTube에서 보기',target:'_blank',rel:'noopener noreferrer'}));buttons[1].textContent='재생';buttons[0].disabled=buttons[2].disabled=episodes.length<2;buttons[1].disabled=false;[...list.children].forEach((li,i)=>li.firstChild.setAttribute('aria-current',i===selected?'true':'false'));}
+for(const [i,e] of episodes.entries()){if(!/^[A-Za-z0-9_-]{11}$/.test(e.videoId)||!e.title||!e.published)throw new Error('Invalid public episode registration');const li=document.createElement('li'),b=document.createElement('button');b.type='button';b.textContent=e.title;b.onclick=()=>load(i);li.append(b);list.append(li);}
+buttons[0].onclick=()=>load(selected-1);buttons[2].onclick=()=>load(selected+1);buttons[1].onclick=()=>{playing=!playing;command(playing?'playVideo':'pauseVideo');buttons[1].textContent=playing?'일시정지':'재생';};if(episodes.length)load(0);
+})();
