@@ -1,0 +1,47 @@
+/* Main magazine headline baseline, compact vertical rhythm. 2026-11-27. */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+body:has(#innovation-nav){font-family:Pretendard,"Noto Sans KR",sans-serif;color:#142027;letter-spacing:-.012em}
+body>header{padding:5px 18px!important;line-height:1.3!important;font-size:12px!important}
+body:has(#innovation-nav) main{padding:8px 24px 16px!important}
+main>.eyebrow{margin:0 0 3px!important;font-size:10px!important;line-height:1.3!important}
+.in-kicker{font-size:10px!important;line-height:1.3!important;margin:0!important}
+.in-masthead{min-height:0!important;padding:7px 12px!important;margin:4px 0!important;gap:12px!important;border-radius:6px!important;line-height:1!important}
+.in-masthead .party-logo{width:78px!important;flex:0 0 78px!important;height:34px!important}
+.in-masthead>span{font:400 clamp(27px,3.2vw,40px)/1.05 Georgia,"Times New Roman",serif!important;letter-spacing:-.045em!important}
+.fan-notice{margin:3px 0!important;font-size:10px!important;line-height:1.4!important}
+body:has(#innovation-nav) main>.note{margin:3px 0!important;font-size:10px!important;line-height:1.4!important}
+#innovation-nav{gap:0 16px!important;padding:3px 0!important;margin:4px 0 8px!important}
+#innovation-nav a,.sidebar-sections a{min-height:32px!important}
+.in-newsroom{gap:18px!important}.in-side{padding-left:16px!important}
+.innovation-section{margin-top:12px!important}
+.innovation-section>h2{padding:7px 0 0!important;margin:0 0 4px!important;font:800 19px/1.4 Pretendard,"Noto Sans KR",sans-serif!important;color:#142027!important;letter-spacing:-.192px!important}
+.section-deck{font-size:12px!important;line-height:1.5!important;margin:3px 0 6px!important}
+.section-daily-rule{padding-bottom:6px!important;margin:3px 0 8px!important;font-size:11px!important;line-height:1.5!important}
+.innovation-current-card,.innovation-card-grid article.card{padding:8px 0!important;margin:0!important}
+.innovation-current-card h3,.innovation-card-grid .card h2,.innovation-hit h3{font:700 20px/1.5 Pretendard,"Noto Sans KR",sans-serif!important;letter-spacing:-.192px!important;color:#142027!important;margin:5px 0 6px!important;padding:0!important;border:0!important}
+.innovation-current-card h3 a,.innovation-card-grid .card h2 a,.innovation-hit h3 a{color:inherit!important;text-decoration:none!important}
+.innovation-current-card p,.innovation-card-grid .card p{margin:4px 0!important;line-height:1.65!important;font-size:14px!important}
+.innovation-current-card .timeline-note{font-size:11px!important;line-height:1.4!important;margin:0 0 3px!important}
+body:not(:has(#innovation-nav))>main{padding:20px 26px!important;margin:4px auto 18px!important}
+body:not(:has(#innovation-nav)) main>h1{font:700 40px/1.4 system-ui,sans-serif!important;letter-spacing:-.03em!important;color:#162b32!important;margin:6px 0 10px!important}
+body:not(:has(#innovation-nav)) main>h2{font:700 25px/1.5 system-ui,sans-serif!important;color:#162b32!important;margin:18px 0 7px!important;padding-top:9px!important}
+body:not(:has(#innovation-nav)) main>p{margin:8px 0!important}
+body:not(:has(#innovation-nav)) main>.note{margin:7px 0!important;padding:8px 10px!important}
+main>.ds-share{margin:6px 0!important;padding:5px 0!important}
+body>footer{margin:14px auto!important;padding:12px 18px!important}
+@media(max-width:650px){
+ body:has(#innovation-nav) main{padding:7px 16px 14px!important}
+ .in-masthead{padding:6px 9px!important;gap:9px!important}
+ .in-masthead .party-logo{width:57px!important;flex:0 0 57px!important;height:25px!important}
+ .in-masthead>span{font-size:27px!important;white-space:nowrap;letter-spacing:-.055em!important}
+ .in-newsroom{gap:10px!important}.in-side{padding-left:0!important}
+ .innovation-current-card h3,.innovation-card-grid .card h2{line-height:1.35!important}
+ .innovation-section{margin-top:10px!important}
+ body:not(:has(#innovation-nav))>main{padding:16px 18px!important}
+ body:not(:has(#innovation-nav)) main>h1{font-size:29px!important;line-height:1.4!important}
+ body:not(:has(#innovation-nav)) main>h2{font-size:23px!important;margin-top:16px!important}
+}
+@media(max-width:350px){.in-masthead>span{font-size:24px!important}.in-masthead .party-logo{width:48px!important;flex-basis:48px!important}}
+
+/* Keep utility blocks compact without hiding notices or controls. */
+#innovation-news{padding:7px 10px!important;margin:6px 0!important;gap:3px 10px!important}#innovation-news-current{padding:5px 0!important}#innovation-news-state{margin:2px 0 0!important}#innovation-news details{margin-top:1px!important}.in-side #innovation-mailing{padding:8px!important;margin-bottom:8px!important}.in-side #innovation-mailing .subscription-notice{margin:0 0 4px!important}.sidebar-sections{margin-top:12px!important;padding-top:8px!important}.innovation-video-widget{margin-bottom:10px!important}.innovation-video-widget h2{margin:5px 0!important}.iv-head{padding:4px 0!important}
