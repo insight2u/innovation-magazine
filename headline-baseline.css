@@ -50,3 +50,18 @@ body>footer{margin:14px auto!important;padding:12px 18px!important}
 
 /* Compact one-line nameplate and fresh asset route. */
 .in-masthead{padding:3px 8px!important;margin:2px 0!important;gap:8px!important;border-radius:3px!important}.in-masthead .party-logo{width:54px!important;flex-basis:54px!important;height:23px!important}.in-masthead>span{font-family:Georgia,"Times New Roman",serif!important;font-weight:400!important;font-size:32px!important;line-height:1!important;letter-spacing:-.05em!important}@media(max-width:650px){.in-masthead{padding:3px 6px!important;gap:7px!important}.in-masthead .party-logo{width:44px!important;flex-basis:44px!important;height:19px!important}.in-masthead>span{font-size:27px!important}}@media(max-width:350px){.in-masthead>span{font-size:24px!important}}
+
+/* One-line search and subscription, expandable choices and consent retained. */
+.in-side #innovation-search{position:relative;display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;gap:4px!important;margin:0 0 5px!important;align-items:start!important}
+.in-side #innovation-search form{margin:0!important;display:flex!important;flex-wrap:nowrap!important;gap:4px!important}
+.in-side #innovation-search input,.in-side #innovation-search button,.in-side #innovation-mailing input[type=email],.in-side #innovation-mailing button{min-height:30px!important;height:30px!important;padding:3px 7px!important;font-size:12px!important}
+.in-side .search-options{flex:none!important;font-size:10px!important;line-height:30px!important;margin:0!important;white-space:nowrap!important}
+.in-side .search-options[open]{grid-column:1/-1;line-height:1.5!important;white-space:normal!important}
+#innovation-result-count{font-size:10px!important;line-height:1.4!important;margin:3px 0!important}
+#innovation-results{grid-column:1/-1}
+.in-side #innovation-mailing{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;gap:4px!important;align-items:start!important;margin:0 0 6px!important;padding:4px 6px!important}
+.in-side #innovation-mailing form{margin:0!important;gap:4px!important}
+.in-side #innovation-mailing>details{font-size:10px!important;line-height:30px!important;margin:0!important;white-space:nowrap!important}
+.in-side #innovation-mailing>details[open]{grid-column:1/-1;white-space:normal!important;line-height:1.6!important}
+#innovation-mail-state:empty{display:none!important}#innovation-mail-state:not(:empty){display:block!important;grid-column:1/-1;font-size:11px!important;line-height:1.5!important}
+.broadcast-staging-note{font-size:11px!important;line-height:1.5!important;margin:5px 0!important}
