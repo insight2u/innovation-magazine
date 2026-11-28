@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-28",
+  "timezone": "Asia/Seoul",
+  "updated_at": "2026-11-28T09:00:54+09:00",
+  "targets": {
+    "article_topics_daily_minimum": 6,
+    "article_topics_published": 0,
+    "article_pages_published": 0,
+    "languages": [
+      "ko"
+    ]
+  },
+  "items": [],
+  "note": "당일 신규 기사 발행 확인 0편. 11월 27일 기사와 11월 28일 공개 방송은 당일 신규 기사 실적에 포함하지 않습니다."
+}
