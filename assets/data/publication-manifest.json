@@ -2,15 +2,34 @@
   "schema_version": "1.0",
   "date": "2026-11-28",
   "timezone": "Asia/Seoul",
-  "updated_at": "2026-11-28T09:00:54+09:00",
+  "updated_at": "2026-11-28T23:07:00+09:00",
   "targets": {
     "article_topics_daily_minimum": 6,
-    "article_topics_published": 0,
-    "article_pages_published": 0,
+    "article_topics_published": 2,
+    "article_pages_published": 2,
     "languages": [
       "ko"
     ]
   },
-  "items": [],
-  "note": "당일 신규 기사 발행 확인 0편. 11월 27일 기사와 11월 28일 공개 방송은 당일 신규 기사 실적에 포함하지 않습니다."
+  "items": [
+    {
+      "id": "innovation-housing-capacity-assumptions-20261128",
+      "date": "2026-11-28",
+      "url": "https://insight2u.github.io/innovation-magazine/innovation-housing-capacity-assumptions-20261128.html",
+      "published_at": "2026-11-28T23:07:00+09:00",
+      "channel": "web",
+      "language": "ko",
+      "status": "published"
+    },
+    {
+      "id": "innovation-ai-rights-beyond-slogan-20261128",
+      "date": "2026-11-28",
+      "url": "https://insight2u.github.io/innovation-magazine/innovation-ai-rights-beyond-slogan-20261128.html",
+      "published_at": "2026-11-28T23:07:00+09:00",
+      "channel": "web",
+      "language": "ko",
+      "status": "published"
+    }
+  ],
+  "note": "11/28 신규 분석2편. 인용 사건11/25·27과 신규 작성일을 구분. 기존 기사 날짜 변경 없음."
 }
